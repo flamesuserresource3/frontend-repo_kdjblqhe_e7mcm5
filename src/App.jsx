@@ -2,7 +2,6 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Categories from './components/Categories';
 import ProsShowcase from './components/ProsShowcase';
-import Reviews from './components/Reviews';
 
 function Footer() {
   return (
@@ -28,7 +27,6 @@ export default function App() {
         <Hero />
         <Categories />
         <ProsShowcase />
-        <Reviews />
       </main>
       <Footer />
     </div>
