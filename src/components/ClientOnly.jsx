@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function ClientOnly({ children, fallback = null }) {
   const [mounted, setMounted] = useState(false);
@@ -8,5 +8,5 @@ export default function ClientOnly({ children, fallback = null }) {
   }, []);
 
   if (!mounted) return fallback;
-  return <>{children}</>;
+  return children;
 }

@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Categories from './components/Categories';
@@ -7,9 +6,9 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white dark:bg-black text-neutral-900 dark:text-white">
+    <div className="min-h-screen bg-white text-gray-900">
       <Header />
-      <main className="pt-24">
+      <main className="pt-16">
         <Hero />
         <Categories />
         <ProsShowcase />
