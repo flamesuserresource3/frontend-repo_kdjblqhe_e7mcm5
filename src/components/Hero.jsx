@@ -1,12 +1,15 @@
 import { motion } from 'framer-motion';
 import { Sparkles, Star, Shield } from 'lucide-react';
 import Spline from '@splinetool/react-spline';
+import ClientOnly from './ClientOnly';
 
 export default function Hero() {
   return (
     <section className="relative overflow-hidden">
       <div className="absolute inset-0">
-        <Spline scene="https://prod.spline.design/6pLRlX2Y5LzYQj3O/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+        <ClientOnly fallback={<div className="h-[60vh] w-full" />}> 
+          <Spline scene="https://prod.spline.design/6pLRlX2Y5LzYQj3O/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+        </ClientOnly>
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-28">
