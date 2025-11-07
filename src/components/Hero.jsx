@@ -1,9 +1,13 @@
+import { Suspense, lazy } from 'react';
 import ClientOnly from './ClientOnly';
-import Spline from '@splinetool/react-spline';
+
+// Lazy-load Spline to avoid any potential issues causing a blank screen
+const LazySpline = lazy(() => import('@splinetool/react-spline').then(m => ({ default: m.default })));
 
 export default function Hero() {
   return (
     <section className="relative min-h-[80vh] flex items-center" aria-label="Hero">
+      {/* Non-blocking visual background */}
       <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-pink-50 via-white to-white" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 items-center">
@@ -22,10 +26,12 @@ export default function Hero() {
 
         <div className="relative h-[50vh] md:h-[70vh] rounded-2xl overflow-hidden border border-gray-200 shadow-sm bg-white">
           <ClientOnly fallback={<div className="w-full h-full bg-gradient-to-br from-pink-100 via-rose-50 to-white" /> }>
-            <Spline
-              scene="https://prod.spline.design/9O1oTb7hC9zKpH6Y/scene.splinecode"
-              style={{ width: '100%', height: '100%' }}
-            />
+            <Suspense fallback={<div className="w-full h-full bg-gradient-to-br from-pink-100 via-rose-50 to-white" /> }>
+              <LazySpline
+                scene="https://prod.spline.design/9O1oTb7hC9zKpH6Y/scene.splinecode"
+                style={{ width: '100%', height: '100%' }}
+              />
+            </Suspense>
           </ClientOnly>
         </div>
       </div>
