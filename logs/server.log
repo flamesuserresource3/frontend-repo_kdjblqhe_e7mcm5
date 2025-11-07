@@ -3,55 +3,7 @@
 > vite
 
 
-  VITE v5.4.20  ready in 226 ms
+  VITE v5.4.20  ready in 221 ms
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.20.74.238:3000/
-6:44:46 AM [vite] Pre-transform error: Transform failed with 1 error:
-/home/workspace/src/components/Hero.jsx:9:45: ERROR: Expected "{" but found "\\"
-6:44:47 AM [vite] Internal server error: Transform failed with 1 error:
-/home/workspace/src/components/Hero.jsx:9:45: ERROR: Expected "{" but found "\\"
-  Plugin: vite:esbuild
-  File: /home/workspace/src/components/Hero.jsx:9:45
-  
-  Expected "{" but found "\\"
-  7  |      <section className="relative min-h-[70vh] flex items-center overflow-hidden">
-  8  |        <div className="absolute inset-0">
-  9  |          <ClientOnly fallback={<div className=\"w-full h-full bg-gradient-to-b from-pink-50 to-white\" /> }>
-     |                                               ^
-  10 |            <Spline scene="https://prod.spline.design/7d7K2zvQfC1vQx1l/scene.splinecode" style={{ width: '100%', height: '100%' }} />
-  11 |          </ClientOnly>
-  
-      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
-      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
-      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
-      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
-      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
-      at Socket.emit (node:events:508:28)
-      at addChunk (node:internal/streams/readable:559:12)
-      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
-      at Readable.push (node:internal/streams/readable:390:5)
-      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
-6:45:15 AM [vite] Internal server error: Transform failed with 1 error:
-/home/workspace/src/components/Hero.jsx:9:45: ERROR: Expected "{" but found "\\"
-  Plugin: vite:esbuild
-  File: /home/workspace/src/components/Hero.jsx:9:45
-  
-  Expected "{" but found "\\"
-  7  |      <section className="relative min-h-[70vh] flex items-center overflow-hidden">
-  8  |        <div className="absolute inset-0">
-  9  |          <ClientOnly fallback={<div className=\"w-full h-full bg-gradient-to-b from-pink-50 to-white\" /> }>
-     |                                               ^
-  10 |            <Spline scene="https://prod.spline.design/7d7K2zvQfC1vQx1l/scene.splinecode" style={{ width: '100%', height: '100%' }} />
-  11 |          </ClientOnly>
-  
-      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
-      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
-      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
-      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
-      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
-      at Socket.emit (node:events:508:28)
-      at addChunk (node:internal/streams/readable:559:12)
-      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
-      at Readable.push (node:internal/streams/readable:390:5)
-      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
