@@ -1,11 +1,11 @@
 import { useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { Scissors, Brush, Sparkle, SprayCan, Wand2, Droplets } from 'lucide-react';
+import { Scissors, Brush, Sparkles, SprayCan, Wand2, Droplets } from 'lucide-react';
 
 const categories = [
   { key: 'hair', label: 'Стрижки и укладки', icon: Scissors, color: 'from-rose-500 to-fuchsia-500' },
   { key: 'makeup', label: 'Макияж', icon: Brush, color: 'from-violet-500 to-indigo-500' },
-  { key: 'nails', label: 'Маникюр и педикюр', icon: Sparkle, color: 'from-amber-500 to-rose-500' },
+  { key: 'nails', label: 'Маникюр и педикюр', icon: Sparkles, color: 'from-amber-500 to-rose-500' },
   { key: 'tan', label: 'Уход за кожей', icon: Wand2, color: 'from-emerald-500 to-teal-500' },
   { key: 'spa', label: 'SPA и релакс', icon: SprayCan, color: 'from-sky-500 to-cyan-500' },
   { key: 'brows', label: 'Брови и ресницы', icon: Droplets, color: 'from-pink-500 to-purple-500' },
